@@ -1,0 +1,14 @@
+#headerFull {
+    display: table;
+    width: 100%;
+}
+
+#headerName {
+    display: table;
+    float: left;
+}
+
+#headerLinks {
+    display: table;
+    float: right;
+}
