@@ -1,21 +1,29 @@
 * {
-    color: antiquewhite;
+    
 }
 
 html, body {
     width: 100%;
-    background-color: rgb(85, 85, 85);
+    margin: 0px;
+    background-color: rgb(66, 66, 66);
 }
 
 a {
     margin: 0px 5px;
+    vertical-align: middle;
 }
 
 p, a {
     font-size: 16px;
 }
 
+/*Start Header*/
+#headerFull * {
+    color: antiquewhite;
+}
+
 #headerFull {
+    margin: 0px;
     width: 100%;
     display: table;
     background-color: black;
@@ -29,5 +37,9 @@ p, a {
 #headerLinks {
     display: table;
     float: right;
-    vertical-align: middle;
+}
+/*End Header*/
+
+#mainBody {
+    background-color: rgb(238, 238, 238);
 }
