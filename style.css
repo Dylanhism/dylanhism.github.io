@@ -1,17 +1,24 @@
+* {
+    color: antiquewhite;
+}
+
 html, body {
     width: 100%;
+    background-color: rgb(85, 85, 85);
+}
+
+a {
+    margin: 0px 5px;
+}
+
+p, a {
     font-size: 16px;
 }
 
-
-
-a {
-    margin: 0px, 5px;
-}
-
 #headerFull {
-    display: table;
     width: 100%;
+    display: table;
+    background-color: black;
 }
 
 #headerName {
