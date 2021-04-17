@@ -1,11 +1,8 @@
-* {
-    
-}
-
 html, body {
+    height: 100%;
     width: 100%;
     margin: 0px;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(40, 32, 53);
 }
 
 a {
@@ -14,32 +11,84 @@ a {
 }
 
 p, a {
-    font-size: 16px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 37px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h1, h2, h3 {
+    width: 30%;
+    margin: 20px auto;
+    text-shadow: 2px 0px 5px rgb(112, 112, 112);
+    border-radius: 11px;
+    background-color:rgb(161, 136, 173);
+    border: 3px solid black;
 }
 
 /*Start Header*/
 #headerFull * {
-    color: antiquewhite;
+    color: rgb(225, 223, 243);
 }
 
 #headerFull {
     margin: 0px;
+    height: 80px;
     width: 100%;
     display: table;
-    background-color: black;
+    background-color: rgb(17, 17, 17);
 }
 
 #headerName {
+    height: 100%;
     display: table;
     float: left;
 }
 
+.headName {
+    padding: 0px 20px;
+    font-size: 45px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
 #headerLinks {
+    height: 100%;
     display: table;
     float: right;
+}
+
+.headLink {
+    font-size: 25px;
+    padding: 0px 20px;
+    display: table-cell;
+    vertical-align: middle;
 }
 /*End Header*/
 
 #mainBody {
     background-color: rgb(238, 238, 238);
+    margin: 20px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    h1, h2, h3 {
+        width: 80%;
+    }
+
+    .headName {
+        font-size: 25px;
+    }
+
+    .headLink {
+        font-size: 20px;
+        padding: 5px;
+    }
 }
