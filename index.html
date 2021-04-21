@@ -6,14 +6,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
     <script>
         $(function(){
-            $('#header').load('header.html');
+            $('#header').load('/header.html');
+        });
+        $(function(){
+            $('#footer').load('/footer.html');
         });
     </script>
     <body>
         <div id='header'></div>
         <div id='mainBody'>
-            <h1>Hello World</h1>
-            <p>I'm hosted with GitHub Pages.</p>
+            <h1><u>Hello World</u></h1>
+            <p>My name is Dylan Hughes and I'm a computer science student at Carleton University.</p>
+            <div id='skills'>
+                <p>SQL</p>
+                <p>NoSQL</p>
+                <p>MongoDb</p>
+                <p>Mongoose.js</p>
+                <p>NodeJS</p>
+                <p>Express.js</p>
+                <p>HTML5</p>
+                <p>CSS</p>
+                <p>Pug.js</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+                <p>Java</p>
+            </div>
         </div>
+        <div id='footer'></div>
     </body>
 </html>
