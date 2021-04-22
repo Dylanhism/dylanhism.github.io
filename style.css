@@ -8,7 +8,7 @@ html, body {
 
 
 a {
-    margin: 0px 5px;
+    margin: 0px auto;
     vertical-align: middle;
 }
 
@@ -16,18 +16,22 @@ p, a {
     font-size: 24px;
 }
 
+p{
+    margin: 10px auto;
+}
+
 h1 {
     font-size: 41px;
+    text-decoration: underline;
 }
 
 h3 {
     font-size: 30px;
 }
 
-h1, h2, h3, p:not(.headName), a:not(.headLink) {
+h1, h2, h3, p:not(.headName, #footerContacts p), a:not(.headLink) {
     width: 45%;
     display: block;
-    margin: auto;
 }
 
 h1 {
@@ -97,13 +101,8 @@ h2, h3 {
 #movieEx {
     margin: 20px;
     height: 700px;
-    width: 700px;
+    width: 750px;
     margin: 20px auto;
-}
-
-#movieEx img {
-    height: inherit;
-    width: inherit;
 }
 
 #movieDynamicEx {
@@ -112,9 +111,20 @@ h2, h3 {
     margin: 20px auto;
 }
 
-#movieDynamicEx img {
-    height: inherit;
-    width: inherit;
+#profileContainer {
+    display: grid;
+    width: 80%;
+    margin: 10px auto;
+    grid-template-columns: repeat(2, auto);
+}
+
+#profileContainer p {
+    width: 95%;
+}
+
+#userPageEx {
+    height: 700px;
+    width: 700px;
 }
 
 /*Header Start*/
@@ -178,7 +188,7 @@ h2, h3 {
     height: inherit;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
