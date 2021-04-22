@@ -29,9 +29,8 @@ h3 {
     font-size: 30px;
 }
 
-h1, h2, h3, p:not(.headName, #footerContacts p), a:not(.headLink) {
-    width: 45%;
-    display: block;
+h1, h2, h3 {
+    width: 95%;
 }
 
 h1 {
@@ -99,21 +98,20 @@ h2, h3 {
 }
 
 #movieEx {
-    margin: 20px;
-    height: 700px;
-    width: 750px;
+    height: 350px;
+    width: 400px;
     margin: 20px auto;
 }
 
 #movieDynamicEx {
-    height: 500px;
-    width: 700px;
+    height: 250px;
+    width: 350px;
     margin: 20px auto;
 }
 
 #profileContainer {
-    display: grid;
-    width: 80%;
+    display: block;
+    width: 95%;
     margin: 10px auto;
     grid-template-columns: repeat(2, auto);
 }
@@ -123,8 +121,8 @@ h2, h3 {
 }
 
 #userPageEx {
-    height: 700px;
-    width: 700px;
+    height: 350px;
+    width: 350px;
 }
 
 /*Header Start*/
@@ -150,7 +148,7 @@ h2, h3 {
 
 .headName {
     padding: 0px 20px;
-    font-size: 49px;
+    font-size: 25px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -162,8 +160,8 @@ h2, h3 {
 }
 
 .headLink {
-    font-size: 29px;
-    padding: 0px 20px;
+    font-size: 20px;
+    padding: 5px;
     display: table-cell;
     text-decoration: none;
     vertical-align: middle;
@@ -187,8 +185,9 @@ h2, h3 {
 #footerContacts {
     height: inherit;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
     align-items: center;
 }
 
@@ -200,17 +199,66 @@ h2, h3 {
 }
 /*Footer End*/
 
-@media only screen and (max-width: 750px) {
-    h1, h2, h3, p {
-        width: 80%;
+@media only screen and (min-width: 770px) {
+    h1, h2, h3 {
+        width: 75%;
     }
 
     .headName {
-        font-size: 25px;
+        font-size: 49px;
     }
 
     .headLink {
-        font-size: 20px;
-        padding: 5px;
+        font-size: 29px;
+        padding: 0px 20px;
     }
+
+    #movieEx {
+        height: 500px;
+        width: 550px;
+    }
+    
+    #movieDynamicEx {
+        height: 350px;
+        width: 500px;
+    }
+
+    #userPageEx {
+        height: 500px;
+        width: 500px;
+    }
+    
+}
+
+@media only screen and (min-width: 1400px) {
+
+    h1, h2, h3 {
+        width: 50%;
+    }
+
+    #profileContainer {
+        display: grid;
+        width: 80%;
+        margin: 10px auto;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    #movieEx {
+        margin: 20px;
+        height: 700px;
+        width: 750px;
+        margin: 20px auto;
+    }
+    
+    #movieDynamicEx {
+        height: 500px;
+        width: 700px;
+        margin: 20px auto;
+    }
+
+    #userPageEx {
+        height: 700px;
+        width: 700px;
+    }
+    
 }
