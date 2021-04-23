@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dylan Hughes</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('#header').load('/header.html');
+    });
+    $(function () {
+        $('#footer').load('/footer.html');
+    });
+</script>
+
+<body>
+    <div id='header'></div>
+    <div id='mainBody'>
+        <h1>Huffman Tree File Compression</h1>
+        <div class='restrained'>
+            <p>During my studies, one project I worked on with two others was creating a program in python to compress
+                .bmp, .txt, .mp4 and .wav files and uncompress them without any data loss (lossless compression).
+            </p>
+        </div>
+        <img id='' src='/images/huffman/forest.bmp' alt='Original image to compress' title='Original image to compress'>
+        <div class='restrained'>
+            <p>We created the program in Python 3 using our knowledge of binary trees to construct a program that used the
+                Huffman Tree compression technique. It worked by taking all bytes in the file and making a dictionary of the
+                most frequent bytes and ordering them accordingly. Then, with this dictionary, the program could make linear
+                lookups by the bytes and construct a binary tree where more frequent bytes are higher up in the tree and
+                less frequent bytes are lower down. Each traversal in the tree corresponded to a zero for going left and
+                a one for going right, creating binary encodings for each byte more efficiently.
+            </p>
+        </div>
+        <img id='' src='/images/huffman/Compression1.gif' alt='The compression steps animated' title='The compression steps animated'>
+        <div class='restrained'>
+            <p>Above is the compression in action with some numbers showing how fast the compression is completed. It takes
+                the forest or man picture above and turns it into a smaller file. There is a limit to this compression as 
+                you might have noticed for the forest file which is not smaller (defeating the purpose). This is due
+                potentially to the fact that Huffman Tree compression is not a completely efficient compression algorithm
+                and could also be due to the fact that the file is already quite small where large images would benefit more.
+            </p>
+        </div>
+        <img id='' src='/images/huffman/compEx2.jpg' alt='The man has a better compression' title='The man has a better compression'>
+    </div>
+    <div id='footer'></div>
+</body>
+
+</html>

@@ -11,7 +11,7 @@ a {
     vertical-align: middle;
 }
 
-p{
+p {
     margin: 10px 10px;
 }
 
@@ -100,25 +100,33 @@ img {
 }
 
 #movieEx {
-    height: 350px;
-    width: 400px;
+    max-height: 350px;
+    max-width: 400px;
+    height: auto;
+    width: auto;
     margin: auto;
 }
 
 #movieDynamicEx {
-    height: 250px;
-    width: 350px;
+    max-height: 250px;
+    max-width: 350px;
+    height: auto;
+    width: auto;
     margin: auto;
 }
 
 #userPageEx {
-    height: 350px;
+    max-height: 350px;
     width: 350px;
+    height: auto;
+    width: auto;
 }
 
 #searchEx {
-    height: 250px;
-    width: 350px;
+    max-height: 250px;
+    max-width: 350px;
+    height: auto;
+    width: auto;
     margin: auto;
 }
 
@@ -229,23 +237,31 @@ img {
     }
 
     #movieEx {
-        height: 500px;
-        width: 550px;
+        max-height: 550px;
+        max-width: 600px;
+        height: auto;
+        width: auto;
     }
     
     #movieDynamicEx {
-        height: 350px;
-        width: 500px;
+        max-height: 500px;
+        max-width: 550px;
+        height: auto;
+        width: auto;
     }
 
     #userPageEx {
-        height: 500px;
-        width: 500px;
+        max-height: 600px;
+        max-width: 600px;
+        height: auto;
+        width: auto;
     }
 
     #searchEx {
-        height: 450px;
-        width: 600px;
+        max-height: 600px;
+        max-width: 600px;
+        height: auto;
+        width: auto;
     }
     
 }
@@ -264,23 +280,31 @@ img {
     }
 
     #movieEx {
-        height: 700px;
-        width: 750px;
+        max-height: 700px;
+        max-width: 800px;
+        height: auto;
+        width: auto;
     }
     
     #movieDynamicEx {
-        height: 500px;
-        width: 700px;
+        max-height: 500px;
+        max-width: 700px;
+        height: auto;
+        width: auto;
     }
 
     #userPageEx {
-        height: 700px;
-        width: 700px;
+        max-height: 700px;
+        max-width: 700px;
+        height: auto;
+        width: auto;
     }
  
     #searchEx {
-        height: 600px;
-        width: 800px;
+        max-height: 800px;
+        max-width: 1150px;
+        height: auto;
+        width: auto;
     }
 
 }
