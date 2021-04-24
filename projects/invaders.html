@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dylan Hughes</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('#header').load('/header.html');
+    });
+    $(function () {
+        $('#footer').load('/footer.html');
+    });
+</script>
+
+<body>
+    <div id='header'></div>
+    <div id='mainBody'>
+        <h1>Space Invaders</h1>
+        <img id='invaderEx' src='/images/spaceInvaders/invadersMenu.gif' alt='The main menu of our recreation' title='The main menu of our recreation'>
+        <div class='restrained'>
+            <p>Space Invaders, a classic game!
+            </p>
+            <p>During highschool, myself and two others remade space invaders using
+                Python 2 with a package called 'Pygame'. Using our combined efforts, 
+                we created every sprite in the game that would look like the original
+                and create our own animations.
+            </p>
+        </div>
+        <img id='invaderEx' src='/images/spaceInvaders/invadersInstruct.gif' alt='The instructions' title='The instructions'>
+        <div class='restrained'>
+            <p>The game, like the original had breakable barriers, aliens worth different
+                amounts of points, a life system and most importantly, moving shooting
+                enemies. Once the aliens got far down enough, they speed up making the
+                game more intense. If you killed all the aliens, the game automatically
+                starts up a new round with an extra life for you and your score
+                carrying over.
+            </p>
+        </div>
+        <img id='invaderEx' src='/images/spaceInvaders/invadersIngame.gif' alt='Ingame gif' title='Aliens are attacking!'>
+        <div class='restrained'>
+            <p>This project at the time tought me a lot about Python, basic animations,
+                timings and framerates and thinking about how data in programs would
+                be represented appropriately and useful.
+            </p>
+        </div>
+    </div>
+    <div id='footer'></div>
+</body>
+
+</html>
