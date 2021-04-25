@@ -3,18 +3,18 @@
 
 <head>
     <title>Dylan Hughes</title>
+    <script src="/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='/style.css'>
 </head>
-<script src="/jquery.min.js" crossorigin="anonymous"></script>
-<script>
-    $(function () {
-        $('#header').load('/header.html');
-    });
-    $(function () {
-        $('#footer').load('/footer.html');
-    });
-</script>
-
 <body>
+    <script>
+        $(function () {
+            $('#header').load('/header.html');
+        });
+        $(function () {
+            $('#footer').load('/footer.html');
+        });
+    </script>
     <div id='header'></div>
     <div id='mainBody'>
         <h1>IMDb clone</h1>
