@@ -53,17 +53,17 @@ img {
     display: table;
 }
 
-.project img {
-    display: block;
-    height: 350px;
-    width: 350px;
+.project a {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
     margin: auto;
 }
 
-.project a {
-    display: inline-block;
-    width: 100%;
-    margin: auto;
+.project img {
+    display: block;
+    height: inherit;
+    width: inherit;
 }
 
 .project h2 {

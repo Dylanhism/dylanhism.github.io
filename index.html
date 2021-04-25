@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Dylan Hughes</title>
-    </head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
-    <script>
-        $(function(){
-            $('#header').load('/header.html');
-        });
-        $(function(){
-            $('#footer').load('/footer.html');
-        });
-    </script>
-    <body>
-        <div id='header'></div>
-        <div id='mainBody'>
-            <h1>Hello World</h1>
-            <p>My name is Dylan Hughes and I'm a computer science student at Carleton University.</p>
-            <div id='skills'>
-                <p>SQL</p>
-                <p>NoSQL</p>
-                <p>MongoDb</p>
-                <p>Mongoose.js</p>
-                <p>NodeJS</p>
-                <p>Express.js</p>
-                <p>HTML5</p>
-                <p>CSS</p>
-                <p>Pug.js</p>
-                <p>JavaScript</p>
-                <p>Python</p>
-                <p>Java</p>
+
+<head>
+    <title>Dylan Hughes</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('#header').load('/header.html');
+    });
+    $(function () {
+        $('#footer').load('/footer.html');
+    });
+</script>
+
+<body>
+    <div id='header'></div>
+    <div id='mainBody'>
+        <h1>Hello World</h1>
+        <div class='restrained'>
+            <p>My name is Dylan Hughes and I'm a computer science student at Carleton University. I have a particular
+                interest in web development and databases but I have skills and knowledge in other areas of programming like
+                OOP and basic networks.</p>
+        </div>
+        <h2>A short list of some skills I have</h2>
+        <div id='skills'>
+            <p>SQL</p>
+            <p>NoSQL</p>
+            <p>MongoDb</p>
+            <p>Mongoose.js</p>
+            <p>NodeJS</p>
+            <p>Express.js</p>
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>Pug.js</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>Java</p>
+            <p>C++</p>
+            <p>C</p>
+        </div>
+        <h2>Featured Projects</h2>
+        <div class='projectContainer'>
+            <div class='project'>
+                <h2>IMDb Clone</h2>
+                <a href='/projects/imdb.html'>
+                    <img src='/images/imdb/moviePage.png' alt='IMDb Clone' title='IMDb Clone'>
+                </a>
+            </div>
+            <div class='project'>
+                <h2>File Compression Algorithm</h2>
+                <a href='/projects/huffman.html'>
+                    <img src='/images/huffman/forest.bmp' alt='Huffman Tree Compression' title='Huffman Tree Compression'>
+                </a>
             </div>
         </div>
-        <div id='footer'></div>
-    </body>
+    </div>
+    <div id='footer'></div>
+</body>
+
 </html>
