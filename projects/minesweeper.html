@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dylan Hughes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='/style.css'>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $('#header').load('/header.html');
+        });
+        $(function () {
+            $('#footer').load('/footer.html');
+        });
+    </script>
+    <div id='header'></div>
+    <div id='mainBody'>
+        <h1>Minesweeper</h1>
+        <div class='restrained'>
+            <p>Using Python 2 and Pygame, I recreated the classic game Minesweeper with one other to develop our skills
+                in Python programming and understanding of functions better.</p>
+        </div>
+        <img id='mineEx' src='/images/minesweeper/mineMedSafe.png' alt='Medium sized minesweeper app' title='Medium sized minesweeper app'>
+        <div class='restrained'>
+            <p>This game like the original, ours featured input through mouse clicks and dealing with the correct square to
+                uncover from the grid depending on the click. Knowing this, we decided to store the grid in a series of arrays
+                that is built up initially by selecting the bomb positions randomly. Then we populating the other tiles with the
+                correct numbers depending on surrounding bombs. Getting the mouse position and using basic arithmatic to divide
+                by the tile size allowed me to have constant lookups when finding the number/bomb underneith it.
+            </p>
+        </div>
+        <img id='mineEx' src='/images/minesweeper/mineMedBomb.png' alt='Example of bombs being uncovered' title='Example of bombs being uncovered'>
+        <div class='restrained'>
+            <p>We also implemented the choice of difficulties which add more tiles to the game and more bombs to avoid. To
+                implement this, we seperated the game modes into different functions to make rendering them and working with
+                the code easier and cleaner to read.
+            </p>
+        </div>
+        <img id='mineEx' src='/images/minesweeper/mineHard.png' alt='Hard difficulty' title='Hard difficulty'>
+    </div>
+    <div id='footer'></div>
+</body>
+
+</html>
