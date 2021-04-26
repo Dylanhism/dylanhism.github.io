@@ -56,15 +56,14 @@ img, .project a {
 
 .project h2 {
     display: block;
-    width: 100%;
+    width: 99%;
     margin: 0px auto 20px;
 }
 
 .project a {
-    display: inline-block;
+    display: block;
     height: 250px;
     width: 250px;
-    margin: auto;
     text-decoration: none;
     color: white;
     background-size: 250px 250px;
@@ -112,6 +111,14 @@ img, .project a {
 
 .minesweeper {
     background-image: url('/images/minesweeper/mineMedSafe.png');
+}
+
+.sorting {
+    background-image: url('/images/sorting/sorting.png');
+}
+
+.cardSingle {
+    background-image: url('/images/pug/cardMain.png');
 }
 
 #mainBody {

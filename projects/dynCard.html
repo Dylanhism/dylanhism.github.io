@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dylan Hughes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='/style.css'>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $('#header').load('/header.html');
+        });
+        $(function () {
+            $('#footer').load('/footer.html');
+        });
+    </script>
+    <div id='header'></div>
+    <div id='mainBody'>
+        <h1>Dynamic Card Viewer</h1>
+        <div class='restrained'>
+            <p>In this short project I learned about the use of Pug.js, a template engine which
+                allowed me to create dynamic HTML pages depending on the data that is fed into it.
+                I also moved to start using Express.js which helped streamline Node.js funtionality
+                into a more convenient format as I had a good understanding of Node.js at this point.
+            </p>
+        </div>
+        <img id='compEx2' src='/images/dynCard/cardMain.png' alt='Main page showing all card names' title='Main page showing all card names'>
+        <div class='restrained'>
+            <p>This project could load an array from a .JSON file which contained all the information
+                needed about the card. Using this array information, the Pug template takes it's name
+                and id on the main page and renders them all reducing the time to manually write it
+                and the duplication of names or information in two places.
+            </p>
+            <p>Learning to create HTML with Pug.js later helped me to create pages in my main project
+                "IMDb clone" by allowing me to render movie pages with different data using the same
+                structure which was necessary to support a great number of films.
+            </p>
+        </div>
+        <img id='compEx2' src='/images/dynCard/cardSingle.png'>
+        <div class='restrained'>
+            <p>Above is an example of what each card would look like if you went to it's page. The rest
+                of the data about the card would be loaded at this time into a different template to 
+                render it like shown. This made the main page a lot cleaner as there wasn't an abundance
+                of information being dumped onto the screen and made loading the page a bit faster with
+                less data to load.
+            </p>
+        </div>
+    </div>
+    <div id='footer'></div>
+</body>
+
+</html>
